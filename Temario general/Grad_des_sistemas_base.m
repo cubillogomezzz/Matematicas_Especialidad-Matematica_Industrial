@@ -1,7 +1,5 @@
 % -- Gradient Descent para sistemas de ecuaciones --
 
-
-
 f1 = @(X) ; %indexando X(i), en vector columna usando ;
 f2 = @(X) ; 
 
@@ -28,8 +26,8 @@ for i=1:N
         break;
     end
     Xn = X;
-    plot([Xn_ant(1) Xn(1)],[Xn_ant(2) Xn(2)], 'r.-') 
-    pause
+    %plot([Xn_ant(1) Xn(1)],[Xn_ant(2) Xn(2)], 'r.-')  
+    %pause %dibuja recta entre iteraciones, hacer sobre plot inicial
 end
     
 

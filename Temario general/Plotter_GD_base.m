@@ -1,9 +1,9 @@
 % -- Plotter 3D de función (R^2-->R) a minimizar en Gradient Descent --
 
-f1 = @(X) ; %indexando X(i), en vector columna usando ;
+f1 = @(X) ; %indexando X(i)
 f2 = @(X) ; 
 
-g = @(X) f1(X)^2+f2(X)^2;
+g = @(X) f1(X).^2+f2(X).^2;
 
 [x,y] = meshgrid(-2:0.1:2,-2:0.1:2);
 
