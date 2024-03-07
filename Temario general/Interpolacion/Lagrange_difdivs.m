@@ -21,7 +21,7 @@ end
 
 table
 
-x = -1.1:0.001:1.1; %puntos en los que obtener p evaluado
+x = -1:0.005:1; %puntos en los que obtener p evaluado
 
 coef = table(1,:);
 p = 0*x;
