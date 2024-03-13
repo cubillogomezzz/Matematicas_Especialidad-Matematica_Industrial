@@ -2,7 +2,7 @@
  
 F = @(X) [ ; ]; %indexando X(i), en vector columna usando ;
 
-JF = @(X) [ ; ]; %matriz jacobiana (cuidado .^)
+JF = @(X) [ ; ]; %MATRIZ jacobiana (cuidado .^)
 
 Xn=[;];
 

@@ -9,11 +9,11 @@ f = @(x) 1./(1+25*x.^2); %función a interpolar
 a=-1.2; %frontera dominio 
 b=1.2;
 x = a:0.01:b; %vector de puntos en los que se devolvera Pn evaluado
-n=21; %numero de nodos, pol interpolador de grado n-1
+n=20; %numero de nodos, pol interpolador de grado n-1
 
 
 
-xi_ini=cos(((2*[0:n]+1)/(2*n+2))*pi);  %calculo nodos, -1<=xi<=1 
+xi_ini=cos(((2*[0:n]+1)/(2*n+2))*pi);  %calculo nodos, -1<=xi<=1  %cuidado de 0 a n, cuantos ponemos
 xi = (a+b)/2 + xi_ini*(b-a)/2 ; %nodos haciendo transformacion afin para ocupar todo el dominio
 fi = f(xi); 
 p = 0*x; 

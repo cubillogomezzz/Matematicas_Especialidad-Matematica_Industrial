@@ -3,6 +3,7 @@
 f1 = @(X) ; %indexando X(i), en vector columna usando ;
 f2 = @(X) ; 
 
+
 g = @(X) f1(X)^2+f2(X)^2;
 
 dgx = @(X) ;

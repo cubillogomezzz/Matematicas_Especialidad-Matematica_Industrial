@@ -7,7 +7,8 @@
 f = @(x) 1./(1+25*x.^2); %función conocida o a comparar con la interpolación
 df = @(x) -50*x./((1+25*x.^2).^2);
 
-xi = -1:0.1:1;
+%xi = -1:0.1:1;
+xi=cos(((2*[0:n]+1)/(2*n+2))*pi);
 %fi = [ ];
 %dfi = [ ];
 fi = f(xi); % si función conocida
