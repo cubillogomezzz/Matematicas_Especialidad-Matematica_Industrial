@@ -4,7 +4,7 @@
 % construye un polinomio de grado 2n+1 que presenta estos valores y
 % primeras derivadas. 
 
-f = @(x) 1./(1+25*x.^2); %función conocida o a comparar con la interpolación
+%f = @(x) 1./(1+25*x.^2); %función conocida o a comparar con la interpolación
 df = @(x) -50*x./((1+25*x.^2).^2);
 
 %xi = -1:0.1:1;
