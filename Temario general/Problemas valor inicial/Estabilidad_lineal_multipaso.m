@@ -1,6 +1,6 @@
-%% Análisis región estabilidad lineal numericamente
+%% Análisis región estabilidad lineal numericamente para métodos multietapa
 
-% Recorremos un mallado de lambdas comprobando si los autovalores de la matriz
+% Recorremos un mallado de lambda*dt comprobando si los autovalores de la matriz
 % que caracteriza el método son menores que 1
 
 [x y] = meshgrid(-5:.1:1,-3:.1:3); 
@@ -15,7 +15,7 @@ for i=1:size(x,1)
     end
 end
 
-% contourf(x,y,-zz,-[1 1]) %colorea región estable
+% contourf(x,y,-zz,-[1 1]) %colorea región inestable
 contourf(x,y,zz,[1 1])
 grid
 
